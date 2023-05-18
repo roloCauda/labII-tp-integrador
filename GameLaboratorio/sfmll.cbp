@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sfmll" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sfmll" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="../sfmll" />
+					<Add directory="src/headers" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sfmll" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="../sfmll" />
+					<Add directory="src/headers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-system" />
+			<Add library="sfml-window" />
+			<Add library="sfml-audio" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename=".gitignore" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/clases/BaseObject.cpp" />
+		<Unit filename="src/clases/Bomba.cpp" />
+		<Unit filename="src/clases/Cajas.cpp" />
+		<Unit filename="src/clases/Colisiones.cpp" />
+		<Unit filename="src/clases/Enemigos.cpp" />
+		<Unit filename="src/clases/GeneradorEnemigos.cpp" />
+		<Unit filename="src/clases/GeneradorLlaves.cpp" />
+		<Unit filename="src/clases/GuardadorDePartida.cpp" />
+		<Unit filename="src/clases/Juego.cpp" />
+		<Unit filename="src/clases/Llave.cpp" />
+		<Unit filename="src/clases/Map.cpp" />
+		<Unit filename="src/clases/Menu.cpp" />
+		<Unit filename="src/clases/Personaje.cpp" />
+		<Unit filename="src/clases/Principal.cpp" />
+		<Unit filename="src/clases/Reproductor.cpp" />
+		<Unit filename="src/clases/Vidas.cpp" />
+		<Unit filename="src/font/stocky.ttf" />
+		<Unit filename="src/headers/BaseObject.h" />
+		<Unit filename="src/headers/Bomba.h" />
+		<Unit filename="src/headers/Cajas.h" />
+		<Unit filename="src/headers/Colisiones.h" />
+		<Unit filename="src/headers/Enemigos.h" />
+		<Unit filename="src/headers/GeneradorEnemigos.h" />
+		<Unit filename="src/headers/GeneradorLlaves.h" />
+		<Unit filename="src/headers/GuardadorDePartida.h" />
+		<Unit filename="src/headers/Juego.h" />
+		<Unit filename="src/headers/Llave.h" />
+		<Unit filename="src/headers/Map.h" />
+		<Unit filename="src/headers/Menu.h" />
+		<Unit filename="src/headers/Personaje.h" />
+		<Unit filename="src/headers/Principal.h" />
+		<Unit filename="src/headers/Reproductor.h" />
+		<Unit filename="src/headers/Vidas.h" />
+		<Unit filename="src/sprites/key.png" />
+		<Unit filename="src/sprites/marine.png" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
